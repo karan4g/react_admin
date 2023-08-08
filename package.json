@@ -24,7 +24,6 @@
     "test": "cross-env NODE_OPTIONS=\"--max_old_space_size=4096\" react-scripts test",
     "eject": "cross-env NODE_OPTIONS=\"--max_old_space_size=4096\" react-scripts eject"
   },
-
   "eslintConfig": {
     "extends": [
       "react-app",

@@ -1,5 +1,5 @@
 {
-  "homepage":"https://karan4g..github.io/react_admin",
+  "homepage": "https://karan4g..github.io/react_admin",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -8,6 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.1",
+    "cross-env": "^7.0.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-bootstrap-icons": "^1.10.3",
@@ -16,12 +17,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy" : "npm run build",
-  "deploy" : "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "cross-env NODE_OPTIONS=\"--max_old_space_size=4096\" react-scripts start",
+    "build": "cross-env NODE_OPTIONS=\"--max_old_space_size=4096\" react-scripts build",
+    "test": "cross-env NODE_OPTIONS=\"--max_old_space_size=4096\" react-scripts test",
+    "eject": "cross-env NODE_OPTIONS=\"--max_old_space_size=4096\" react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

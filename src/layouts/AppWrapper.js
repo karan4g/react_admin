@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 // import * as icons from 'react-bootstrap-icons';
 import { CustomIcon } from "../utils/utils";
 
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+// import Container from "react-bootstrap/Container";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 
 export default class AppWrapper extends Component {
   constructor(props) {
@@ -54,6 +54,28 @@ export default class AppWrapper extends Component {
 }
 ]
   }
+  componentDidMount(){
+    window.addEventListener("resize", this.calculateScreenSize);
+  }
+
+  componentWillUnmount() {
+    // Make sure to remove the DOM listener when the component is unmounted.
+    window.removeEventListener("resize", this.calculateScreenSize);
+  }
+
+  calculateScreenSize =()=>{
+    var innerWidth=window.innerWidth;
+    if(innerWidth <= 500){
+      this.setState({ isNotActive: false });
+    }
+  }
+  OpenCollapse= ()=>{
+    var innerWidth=window.innerWidth;
+    if(innerWidth <= 500){
+      return true;
+    }
+    this.setState({ isNotActive: !this.state.isNotActive })
+  }
 
   //     const [isNotActive, setNotActive] = useState("true");
   //   const [isDropdownActive, setDropdownActive] = useState("false");
@@ -70,7 +92,7 @@ export default class AppWrapper extends Component {
                   type="button"
                   id="sidebarCollapse"
                   onClick={() =>
-                    this.setState({ isNotActive: !this.state.isNotActive })
+                    this.OpenCollapse()
                   }
                   className="btn btn-custom"
                 >
@@ -81,17 +103,28 @@ export default class AppWrapper extends Component {
                     {this.crossIcon}
                   </span>
                 </button>
-                <div className="sidebar-header">
+                {/* <div className="sidebar-header">
                   <img
+                    src={"/images/site-logo.png"}
+                    className="rounded-circle usr-image"
+                    height={this.state.isNotActive ? "30" : "70"}
+                    width={this.state.isNotActive ? "30" : "70"}
+                  ></img>
+                  <h3>Admin Panel</h3>
+                </div> */}
+
+                <ul className="list-unstyled components">
+                <li  className="list-item">
+                                <Link to={"/"}>
+                      <img
                     src={"/images/site-logo.png"}
                     className="rounded-circle usr-image"
                     height={this.state.isNotActive ? "20" : "70"}
                     width={this.state.isNotActive ? "20" : "70"}
                   ></img>
-                  <h3>Admin Panel</h3>
-                </div>
-
-                <ul className="list-unstyled components">
+                  <h4>AdminPanel</h4>
+                                </Link>
+                              </li> 
                     {
                         this.MenuItems && this.MenuItems.length ?
                         this.MenuItems.map((obj,i)=>{

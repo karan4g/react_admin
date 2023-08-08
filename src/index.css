@@ -1,11 +1,14 @@
 /*sidebar css Begin */
 .wrapper{
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   top: 0;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #215cad;
   border-radius: 5px;
+  position:relative;
+  min-height:100vh;
+  height:100%;
 }
 #sidebarCollapse{
   position: absolute;
@@ -16,6 +19,11 @@
   height: inherit;
   margin: 2rem;
   text-align: left;
+}
+#sidebar{
+  display: flex;
+flex-direction: column;
+align-items: baseline;
 }
 #sidebar ul li a{
   margin-left: .5rem;
@@ -59,7 +67,7 @@ text-align: left;
 #sidebar ul li a span{
   margin: 0 0 0 10px;
   }
-#sidebar.active ul li a span{
+#sidebar.active ul li a span,#sidebar.active ul li a h4{
 display: none;
 }
 #sidebar.active ul li i {
@@ -131,4 +139,7 @@ align-items: baseline;
 .my-component-wrapper button{
   background-color: #215cad;
 color: white;
+}
+.my-component-wrapper .content-container{
+  max-width:100% !important;
 }

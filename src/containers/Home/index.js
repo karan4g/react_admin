@@ -61,7 +61,7 @@ export default class Home extends Component {
 
   render() {
     return (
-      <Container>
+      <Container className="content-container">
         <Row>
           <Col>
             <div className="component-heading">

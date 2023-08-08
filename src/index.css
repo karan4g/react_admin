@@ -1,13 +1,134 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*sidebar css Begin */
+.wrapper{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background-color: #215cad;
+  border-radius: 5px;
+}
+#sidebarCollapse{
+  position: absolute;
+  top: .5rem;
+  right: 1.3rem;
+}
+#sidebar{
+  height: inherit;
+  margin: 2rem;
+  text-align: left;
+}
+#sidebar ul li a{
+  margin-left: .5rem;
+  color: #e9e9ea;
+}
+#sidebar .list-item{
+  margin: 2rem 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+#sidebar li a{
+  text-decoration: none;
+  padding-left: .5rem;
+}
+.icon-color{
+  color: #738a9b;
+}
+.btn-custom{
+  background-color: #c4b9b9;
+  border-radius: 50%;
+  color: #215cad;
+  font-weight: 600;
+}
+.sidebar-header{
+  margin-top: 4rem;
+  text-align: center;
+  color: #e9e9ea;
+}
+.usr-image{
+border: 2px solid white;
+}
+.collapse{
+display: none;
+}
+#sidebar.active .sidebar-header h3 {
+display: none;
+}
+#sidebar ul li a {
+text-align: left;
+}
+#sidebar ul li a span{
+  margin: 0 0 0 10px;
+  }
+#sidebar.active ul li a span{
+display: none;
+}
+#sidebar.active ul li i {
+display: block;
+}
+#sidebar.active .dropdown-toggle::after {
+top: auto;
+bottom: 10px;
+right: 50%;
+-webkit-transform: translateX(50%);
+-ms-transform: translateX(50%);
+transform: translateX(50%);
+}
+.hidden{
+display: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (max-width: 768px) {
+#sidebar.active {
+  width: 50px;
+  text-align: center;
+  margin: 0;
+}
+#sidebar {
+  margin: 1rem;
+}
+#sidebarCollapse{
+  right: .5rem;
+}
+#sidebar.active .sidebar-header h3 {
+  display: none;
+}
+.dropdown-toggle::after {
+  top: auto;
+  bottom: 10px;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%);
+}
+}
+/* Sidebar css end */
+
+.appwrapper{
+  display:flex;
+  justify-content:space-between;
+}
+/* .todo-listing{
+  display:flex;
+} */
+.todo-listing svg{
+  float:right;
+}
+.add-item-row{
+  align-items:baseline;
+}
+.my-component-wrapper{
+  width: 100%;
+  height: 100%;
+  padding:50px 10px 50px 10px !important;
+}
+.component-heading{
+  display: flex;
+align-items: baseline;
+}
+.component-heading svg{
+  margin:0 10px 0 0px;
+}
+.my-component-wrapper button{
+  background-color: #215cad;
+color: white;
 }

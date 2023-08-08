@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react_admin/static/css/main.a2ab59db.css",
-    "main.js": "/react_admin/static/js/main.84f9f18a.js",
-    "static/js/787.28cb0dcd.chunk.js": "/react_admin/static/js/787.28cb0dcd.chunk.js",
-    "static/media/logo.svg": "/react_admin/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/react_admin/index.html",
-    "main.a2ab59db.css.map": "/react_admin/static/css/main.a2ab59db.css.map",
-    "main.84f9f18a.js.map": "/react_admin/static/js/main.84f9f18a.js.map",
-    "787.28cb0dcd.chunk.js.map": "/react_admin/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/karan4g.github.io/react_admin/static/css/main.a2ab59db.css",
+    "main.js": "/karan4g.github.io/react_admin/static/js/main.c39402bb.js",
+    "static/js/787.3a280345.chunk.js": "/karan4g.github.io/react_admin/static/js/787.3a280345.chunk.js",
+    "static/media/logo.svg": "/karan4g.github.io/react_admin/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/karan4g.github.io/react_admin/index.html",
+    "main.a2ab59db.css.map": "/karan4g.github.io/react_admin/static/css/main.a2ab59db.css.map",
+    "main.c39402bb.js.map": "/karan4g.github.io/react_admin/static/js/main.c39402bb.js.map",
+    "787.3a280345.chunk.js.map": "/karan4g.github.io/react_admin/static/js/787.3a280345.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a2ab59db.css",
-    "static/js/main.84f9f18a.js"
+    "static/js/main.c39402bb.js"
   ]
 }

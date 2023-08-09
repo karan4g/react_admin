@@ -1,12 +1,10 @@
 # Getting Started with Create React App
+# Sample Admin Panel
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
- 
+ Node version 18.17
 
-
-
-  "homepage": "https://karan4g.github.io/react_admin", 
-
+Check out this Demo here https://karan4g.github.io/react_admin 
 
 
   

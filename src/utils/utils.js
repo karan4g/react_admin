@@ -16,3 +16,8 @@ export function setData(label, data) {
     if (window && window.localStorage)
         localStorage.setItem(label, JSON.stringify(data));
 }
+
+export function removeData(label) {
+  if (window && window.localStorage)
+      localStorage.removeItem(label);
+}

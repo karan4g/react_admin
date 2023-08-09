@@ -1,6 +1,6 @@
 {
-  "homepage":"https://karan4g.github.io",
-  "name": "my-admin-panel",
+  "homepage":"https://karan4g.github.io/react_admin",
+  "name": "react_admin",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

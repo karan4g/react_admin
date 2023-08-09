@@ -5,6 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  Node version 18.17
 
 Check out this Demo here https://karan4g.github.io/react_admin 
+![Admin3](https://github.com/karan4g/react_admin/assets/77822406/ba55f80d-d4fc-4bc8-85c9-b1247e06d1e7)
+![Admin2](https://github.com/karan4g/react_admin/assets/77822406/a1eb6119-52b9-469a-9d03-a649cf5cdd2b)
+![Admin](https://github.com/karan4g/react_admin/assets/77822406/3d23dfb3-cb4c-4142-90ff-f3bffc1dbc4f)
 
 
   

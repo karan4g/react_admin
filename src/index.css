@@ -1,11 +1,14 @@
 /*sidebar css Begin */
 .wrapper{
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   top: 0;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #215cad;
   border-radius: 5px;
+  position:relative;
+  min-height:100vh;
+  height:100%;
 }
 #sidebarCollapse{
   position: absolute;
@@ -16,6 +19,11 @@
   height: inherit;
   margin: 2rem;
   text-align: left;
+}
+#sidebar{
+  display: flex;
+flex-direction: column;
+align-items: baseline;
 }
 #sidebar ul li a{
   margin-left: .5rem;
@@ -59,7 +67,7 @@ text-align: left;
 #sidebar ul li a span{
   margin: 0 0 0 10px;
   }
-#sidebar.active ul li a span{
+#sidebar.active ul li a span,#sidebar.active ul li a h4{
 display: none;
 }
 #sidebar.active ul li i {
@@ -101,6 +109,18 @@ display: none;
   transform: translateX(50%);
 }
 }
+@media (max-width:500px){
+  .wrapper.inactive{
+    min-width:100% !important;
+  }
+  .wrapper ul{
+    padding-top: 20px;
+  }
+  .wrapper.inactive ul{
+    padding-top: 20px;
+    margin:auto;
+  }
+}
 /* Sidebar css end */
 
 .appwrapper{
@@ -131,4 +151,47 @@ align-items: baseline;
 .my-component-wrapper button{
   background-color: #215cad;
 color: white;
+}
+.my-component-wrapper .content-container{
+  max-width:100% !important;
+}
+
+
+.auth-wrapper .auth-container{
+  max-width:100% !important;
+  
+}
+.auth-wrapper .auth-container .auth-image{
+  max-width:100% !important;
+  max-height:100% !important;
+  width: 100%;
+height: 100%;
+}
+.auth-wrapper .auth-container .auth-cols{
+padding:0;
+margin:0;
+}
+.auth-wrapper .auth-container .auth-cols:last-child{
+  margin:auto;
+}
+.auth-wrapper .login-form{
+  max-width: 50% !important;
+margin: auto;
+}
+.auth-wrapper .site-logo{
+  max-width: 50% !important;
+margin: auto;
+text-align: center;
+}
+.auth-wrapper .auth-cols{
+  max-height:100vh;
+}
+.auth-wrapper button{
+  background-color: #215cad;
+color: white;
+}
+@media (max-width:1200px){
+  .auth-wrapper .auth-cols{
+    max-height:50vh;
+  }
 }

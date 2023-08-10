@@ -27,6 +27,7 @@ const  handleOnSubmit=(e)=>{
         return(
           <Container>
             <Row>
+              <div className="login-text-image">
             <Col className="site-logo" xs={12}>
             <img
                     src={"/react_admin/images/site-logo.png"}
@@ -34,6 +35,10 @@ const  handleOnSubmit=(e)=>{
                     width={"70"}
                   ></img>
             </Col>
+            <Col className="site-logo" xs={12}>
+           <h1>Login</h1>
+            </Col>
+            </div>
             </Row>
             <Row>
               <Col xs={12}>

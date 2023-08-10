@@ -108,15 +108,18 @@ display: none;
   -ms-transform: translateX(50%);
   transform: translateX(50%);
 }
+.appwrapper .wrapper ul{
+  padding-top: 20px;
+}
 }
 @media (max-width:500px){
-  .wrapper.inactive{
+  .appwrapper .wrapper.inactive{
     min-width:100% !important;
   }
-  .wrapper ul{
+  .appwrapper .wrapper ul{
     padding-top: 20px;
   }
-  .wrapper.inactive ul{
+  .appwrapper .wrapper.inactive ul{
     padding-top: 20px;
     margin:auto;
   }
